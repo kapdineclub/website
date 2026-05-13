@@ -1,3 +1,8 @@
+# Khana Aur Peena – Single Page Website (GitHub/Netlify Ready)
+
+Create a file called `index.html` and paste this code:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,4 +75,186 @@
       background-size: cover;
       background-position: center;
       color: white;
+    }
+
+    .hero h1 {
+      font-size: 5rem;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      max-width: 700px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .btn {
+      margin-top: 35px;
+      display: inline-block;
+      padding: 14px 30px;
+      background: #9b1b63;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: 0.3s;
+      font-size: 0.95rem;
+    }
+
+    .btn:hover {
+      background: #24503f;
+      transform: translateY(-2px);
+    }
+
+    h2 {
+      font-size: 3.2rem;
+      color: #24503f;
+      margin-bottom: 20px;
+    }
+
+    .section-text {
+      max-width: 700px;
+      line-height: 1.9;
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    .dates-box {
+      margin-top: 30px;
+      background: white;
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .dates-box h3 {
+      color: #9b1b63;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 24px;
+      transition: 0.4s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .contact-box {
+      background: white;
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .contact-box p {
+      margin: 14px 0;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #24503f;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      nav {
+        gap: 15px;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Dine Club</a>
+    <a href="#dates">Next Dates</a>
+    <a href="#pictures">Pictures</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Khana Aur Peena</h1>
+    <p>
+      An intimate dine club bringing together curated food, warm conversations,
+      and unforgettable evenings.
+    </p>
+
+    <a href="YOUR_GOOGLE_FORM_LINK" class="btn" target="_blank">
+      Reserve Your Spot
+    </a>
+  </section>
+
+  <section id="dates">
+    <h2>Next Dates</h2>
+    <p class="section-text">
+      Join us for our upcoming curated dining experiences.
+      Seats are intentionally limited for a more intimate evening.
+    </p>
+
+    <div class="dates-box">
+      <h3>06 & 07 June</h3>
+      <p>Vienna • Limited Seats</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0I2xrm3xZZnWiwHuNJ19i_HixehFT-lszZv5GTSnaZ12Ppw/viewform?pli=1" class="btn" target="_blank">
+        Reserve Seat
+      </a>
+    </div>
+  </section>
+
+  <section id="pictures">
+    <h2>Pictures</h2>
+    <p class="section-text">
+      A glimpse into the atmosphere, flavours and moments from Khana Aur Peena.
+    </p>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Dining">
+      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Food">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Restaurant">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+      <p><strong>Instagram:</strong></p>
+      <p>@kapdineclub</p>
+
+      <a href="https://instagram.com/kapdineclub" class="btn" target="_blank">
+        Visit Instagram
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    Khana Aur Peena • Curated Dining Experiences
+  </footer>
+
+</body>
 </html>
+```
